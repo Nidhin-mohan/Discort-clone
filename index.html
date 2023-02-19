@@ -79,13 +79,13 @@
 
     <!-- Hero section -->
 
-        <div class=" flex flex-col items-center py-40 ">
+        <div class=" flex flex-col items-center md:py-40 ">
 
          <div class="w-3/6 py-10">
-           <h1 class="text-center text-7xl font-black space-x-2">IMAGINE A PLACE...</h1>
-           <p class="mt-10 text-center text-2xl leading-relaxed ">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+           <h1 class="text-center text-4xl md:text-7xl font-black space-x-2">IMAGINE A PLACE...</h1>
+           <p class="mt-10 text-center text-lg md:text-2xl leading-relaxed ">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
          </div>
-         <div class="flex">
+         <div class="flex flex-col md:flex-row">
           <button class="m-6  w-96 content-center text-center rounded-full flex  align-center text-xl px-8 py-6 bg-white font-medium text-black "> <svg class="w-6 h-6 m-2 mr-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
         class="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="currentColor"
@@ -97,18 +97,20 @@
 
          </div>
            <!-- floating images -->
-          <div class="flex   absolute  bottom-[25px]  ">
+           <!-- for large screen -->
+          <div class=" hidden lg:visible  lg:flex  absolute  md::visible bottom-[90px]  ">
             <img class="ml-[-200px] h-[400px]" src="/assets/Imagine a place.svg" alt="test">
          <img class=" ml-[750px] h-[400px]"  src="/assets/juise.svg" alt="test">
           </div>
-
-
-        
+          <!-- for smaller scree -->
+          <div class=" visible lg:hidden items-center    md::visible bottom-[90px]  ">
+            <img class=" mr-44 h-[400px]" src="/assets/Imagine a place.svg" alt="test">
+         
           </div>
 
-         
 
         
+          </div>    
 
 
     </div>
@@ -117,7 +119,7 @@
 
     <!-- Hero 2 -->
 
-    <div class=" flex  items-center py-36 justify-center">
+    <div class=" flex flex-col md:flex-row items-center md:py-36 justify-center">
       <div class=" ">
        <img class="h-[550px] mr-52" src="/assets/studygrp.svg" alt="">
       </div>
@@ -129,20 +131,20 @@
 
      <!-- Hero 3 -->
 
-    <div class=" flex bg-[#F6F6F6] items-center py-36 justify-center">
+    <div class=" flex flex-col md:flex-row bg-[#F6F6F6] items-center py-5 md:py-36 justify-center">
      
       <div class="  ">
         <h1 class="max-w-md text-5xl font-extrabold leading-normal">Create an invite-only place where you belong</h1>
         <p class="max-w-md mt-6 text-2xl leading-relaxed ">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
       </div>
        <div class=" ">
-       <img class="h-[550px] ml-52 " src="/assets/justchilln .svg" alt="">
+       <img class="h-[550px] md:ml-52 " src="/assets/justchilln .svg" alt="">
       </div>
     </div>   
 
      <!-- Hero 4 -->
 
-    <div class=" flex  items-center py-36 justify-center">
+    <div class=" flex flex-col md:flex-row items-center md:py-36 justify-center">
       <div class=" ">
        <img class="h-[550px] mr-52" src="/assets/coach.svg" alt="">
       </div>
@@ -153,17 +155,17 @@
     </div>
 
     <!-- Hero 5 -->
-    <div class=" flex flex-col bg-[#F6F6F6] items-center py-36 justify-center">
+    <div class=" flex flex-col bg-[#F6F6F6] items-center py-6   md:py-36 justify-center">
       <div class="max-w-5xl flex content-center flex-col">
         <h1 class=" text-center text-5xl font-extrabold  leading-normal">RELIABLE TECH FOR STAYING CLOSE</h1>
         <p class=" text-center mt-6 text-2xl leading-relaxed ">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
       </div>
 
       <div>
-        <img class="h-[800px]" src="/assets/hero4.svg" alt="just chill">
+        <img class="md:h-[800px]" src="/assets/hero4.svg" alt="just chill">
       </div>
 
-      <div class="mt-14 text-center ">
+      <div class="md:mt-14  text-center ">
         <h1 class="font-black text-4xl ">Ready to start your journey?</h1>
          <button class="m-6  w-96 content-center text-center rounded-full flex  align-center text-xl px-8 py-6 bg-myfooterhead font-medium text-white "> <svg class="w-6 h-6 m-2 mr-8" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
         class="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -185,21 +187,21 @@
      <div class="bg-myfooter text-white">
     <div class="container mx-auto flex flex-col lg:flex-row justify-center px-20 py-12">
 
-        <div class="flex ">
+        <div class="flex items-center ">
        <div>
         <h1>IMAGINE A PLACE</h1>
        </div>
 
        <div>
         <img src="/assets/vector3.svg" alt="">
-        <img class="" src="/assets/vector5.svg" alt="frf">
+        <img class="h-32 w-9/12" src="/assets/vector5.svg" alt="svg check">
        </div>
         </div>
 
       
-        <div class="flex flex-wrap justify-around gap-6 ">
-            <div class="flex ">
-              <div class="flex flex-col gap-3 mx-20">
+        <div class="   md:flex justify-around gap-6  ">
+            <div class="flex  mb-6 ">
+              <div class="flex flex-col gap-3 md:mx-20">
                 <p><strong>Product</strong></p>
                 <p>Download</p>
                 <p>Headphones</p>
@@ -207,7 +209,7 @@
                 <p>Status</p>
               
             </div>
-            <div class="flex flex-col gap-2 mx-20">
+            <div class="flex flex-col gap-2 md:mx-20 ml-20  ">
                 <p><strong>Company</strong></p>
                 <p>About</p>
                 <p>Jobs</p>
@@ -216,7 +218,7 @@
             </div>
             </div>
             <div class="flex ">
-              <div class="flex flex-col gap-3 mx-20">
+              <div class="flex flex-col gap-3 md:mx-20">
                 <p><strong>Resources</strong></p>
                 <p>College</p>
                 <p>Support</p>
@@ -228,7 +230,7 @@
                 <p>Community</p>
               
             </div>
-           <div class="flex flex-col gap-3 mx-20">
+           <div class="flex flex-col gap-3 ml-20    md:mx-20">
                 <p><strong>Policies</strong></p>
                 <p>Terms</p>
                 <p>Privacy</p>
